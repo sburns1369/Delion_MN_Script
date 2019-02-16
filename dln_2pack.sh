@@ -122,7 +122,7 @@ sudo mkdir /home/delion/.delion
 sudo touch /home/delion/.delion/delion.conf
 echo "rpcuser=user"`shuf -i 100000-9999999 -n 1` >> /home/delion/.delion/delion.conf
 echo "rpcpassword=pass"`shuf -i 100000-9999999 -n 1` >> /home/delion/.delion/delion.conf
-echo "rpcallowip=127.0.0.1" >> /home/delion/.delion/delion.conf
+echo "rpcallowip=$(hostname -I | cut -f1 -d' ')" >> /home/delion/.delion/delion.conf
 echo "server=1" >> /home/delion/.delion/delion.conf
 echo "daemon=1" >> /home/delion/.delion/delion.conf
 echo "maxconnections=250" >> /home/delion/.delion/delion.conf
@@ -150,7 +150,7 @@ sudo mkdir /home/delion2/.delion
 sudo touch /home/delion2/.delion/delion.conf
 echo "rpcuser=user"`shuf -i 100000-9999999 -n 1` >> /home/delion2/.delion/delion.conf
 echo "rpcpassword=pass"`shuf -i 100000-9999999 -n 1` >> /home/delion2/.delion/delion.conf
-echo "rpcallowip=127.0.0.1" >> /home/delion2/.delion/delion.conf
+echo "rpcallowip=$(hostname -I | cut -f2 -d' ')" >> /home/delion2/.delion/delion.conf
 echo "server=1" >> /home/delion2/.delion/delion.conf
 echo "daemon=1" >> /home/delion2/.delion/delion.conf
 echo "maxconnections=250" >> /home/delion2/.delion/delion.conf
