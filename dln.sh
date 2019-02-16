@@ -61,6 +61,8 @@ echo -e ${RED}"PLEASE READ "${CLEAR}
 echo -e ${YELLOW}"If you don't receive payment for multiple mastnodes, contact Support "${CLEAR}
 echo -e ${YELLOW}"Find Sburns1369#1584 on Discord - https://discord.gg/YhJ8v3g"${CLEAR}
 echo
+echo -e ${GREEN}"(1) = 1 IPv4 Masternode"${CLEAR}
+echo -e ${GREEN}"(2) = 1 IPv4 Masternode and 1 IPv6 Masternode"${CLEAR}
 echo -e ${GREEN}"Please enter the number (1-2) of $COIN Masternode(s)"${CLEAR}
 echo -e ${GREEN}"you would like to install :"${CLEAR}
 read NUMBER
