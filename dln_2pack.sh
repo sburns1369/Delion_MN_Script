@@ -141,11 +141,12 @@ echo
 echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
 deliond -datadir=/home/delion/.delion -daemon
 echo
-echo -e ${YELLOW}"Looking for a Shared Masternode Service? Check out Crypto Hash Tank" ${CLEAR}
-echo -e ${YELLOW}"Support ${BLUE}NullEntry${YELLOW} with a referal link, and" ${CLEAR}
-echo -e ${YELLOW}"  put your loose crypto change to work for you!" ${CLEAR}
-echo -e ${YELLOW}"    https://www.cryptohashtank.com/TJIF "${CLEAR}
-sleep 60
+echo -e ${YELLOW}"Looking for a Shared Masternode Service?"${CLEAR}
+echo -e ${YELLOW}"Check out Crypto Hash Tank's (CHT) Service" ${CLEAR}
+echo -e ${YELLOW}"Support my Project, and put your spare crypto change to work for you!" ${CLEAR}
+echo -e ${GREEN}"             https://www.cryptohashtank.com/TJIF "${CLEAR}
+echo
+sleep 30
 echo -e "${GREEN}Configuring Second DeLion Node${CLEAR}"
 sudo mkdir /home/delion2/.delion
 sudo touch /home/delion2/.delion/delion.conf

@@ -137,11 +137,12 @@ echo
 echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
 deliond -datadir=/home/delion/.delion -daemon
 echo
-echo -e ${YELLOW}"Looking for a Shared Masternode Service? Check out Crypto Hash Tank" ${CLEAR}
+echo -e ${YELLOW}"Looking for a Shared Masternode Service?"${CLEAR}
+echo -e ${YELLOW}"Check out Crypto Hash Tank's (CHT) Service" ${CLEAR}
 echo -e ${YELLOW}"Support my Project, and put your spare crypto change to work for you!" ${CLEAR}
 echo -e ${GREEN}"             https://www.cryptohashtank.com/TJIF "${CLEAR}
 echo
-sleep 60
+sleep 30
 echo
 echo -e ${BOLD}"All ${NODESN} DLN Nodes Launched, please wait for it to synchronize".${CLEAR}
 echo
