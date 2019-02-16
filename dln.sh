@@ -1,9 +1,5 @@
 #!/bin/bash
 SCRIPTVERSION=0.08a
-#setting varibles
-wallet=Dq92A8mAmqG5tjVKe7ADVD3ApSjbqGYxLD
-COIN=Delion
-COIN3l=DLN
 #Setting Colors
 BLUE='\033[0;96m'
 GREEN='\033[0;92m'
@@ -42,14 +38,14 @@ echo "        ,---|/  ____  _   /  __.  // // __.  /  o __ ____ ";
 echo "         \_/ \_/ / <_/_)_<__(_/|_</_</_(_/|_<__<_(_)/ / <_";
 echo "                                                          ";
 echo "                                                          ";
-echo -e ${YELLOW}" For $Coin   Script Version:${SCRIPTVERSION}"${CLEAR}
+echo -e ${YELLOW}" For Delion Script Version:${SCRIPTVERSION}"${CLEAR}
 echo -e ${YELLOW}"        Pre-Release Test"${CLEAR}
 echo
-echo -e ${YELLOW}"Welcome to the $Coin Beta Automated Install Script by ${BLUE}NullEntry"${CLEAR}
+echo -e ${YELLOW}"Welcome to the Delion Beta Automated Install Script by ${BLUE}NullEntry"${CLEAR}
 echo -e ${RED}'THE SCRIPT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND'${CLEAR}
 echo -e ${YELLOW}"Durring this Process Please Hit Enter or Input What is Asked."${CLEAR}
 echo
-echo -e ${GREEN}"Are you sure you want to install $COIN Masternode(s)?"${CLEAR}
+echo -e ${GREEN}"Are you sure you want to install Delion Masternode(s)?"${CLEAR}
 echo -e ${GREEN} "Press y for yes, and n for no followed by [ENTER]:"${CLEAR}
 read AGREE
 if [[ $AGREE =~ "y" ]] ; then
@@ -67,8 +63,8 @@ echo -e ${GREEN}"Please enter the number (1-2) of $COIN Masternode(s)"${CLEAR}
 echo -e ${GREEN}"you would like to install :"${CLEAR}
 read NUMBER
 case $NUMBER in
-  1)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/${COIN}_MN_Script/master/${COIN3l}_single.sh);;
-  2)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/${COIN}_MN_Script/master/${COIN3l}_2pack.sh);;
+  1)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/dln_single.sh);;
+  2)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/dln_2pack.sh);;
 # 3)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/${COIN}_MN_Script/master/${COIN3l}_3pack.sh);;
 # 4)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/${COIN}_MN_Script/master/${COIN3l}_4pack.sh);;
   *)echo -e ${RED}"Invalid Option - Exiting Setup - Re-run to try again"${CLEAR};;
