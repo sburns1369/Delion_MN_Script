@@ -1,5 +1,4 @@
 #!/bin/bash
-SCRIPTVERSION=0.08a
 #Setting Colors
 BLUE='\033[0;96m'
 GREEN='\033[0;92m'
@@ -13,7 +12,7 @@ if [[ $(lsb_release -d) != *16.04* ]]; then
   echo -e ${RED}"The operating system is not Ubuntu 16.04. You must be running on ubuntu 16.04."${CLEAR}
   exit 1
 fi
-#Menu to Confirm and Pull correct script
+#Menu to Confirm and Pull correct scripts
 echo
 echo
 echo
@@ -38,7 +37,7 @@ echo "        ,---|/  ____  _   /  __.  // // __.  /  o __ ____ ";
 echo "         \_/ \_/ / <_/_)_<__(_/|_</_</_(_/|_<__<_(_)/ / <_";
 echo "                                                          ";
 echo "                                                          ";
-echo -e ${YELLOW}" For Delion Script Version:${SCRIPTVERSION}"${CLEAR}
+echo -e ${YELLOW}" For Delion Script Version:0.08a"${CLEAR}
 echo -e ${YELLOW}"        Pre-Release Test"${CLEAR}
 echo
 echo -e ${YELLOW}"Welcome to the Delion Beta Automated Install Script by ${BLUE}NullEntry"${CLEAR}
@@ -65,8 +64,6 @@ read NUMBER
 case $NUMBER in
   1)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/dln_single.sh);;
   2)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/dln_2pack.sh);;
-# 3)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/${COIN}_MN_Script/master/${COIN3l}_3pack.sh);;
-# 4)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/${COIN}_MN_Script/master/${COIN3l}_4pack.sh);;
   *)echo -e ${RED}"Invalid Option - Exiting Setup - Re-run to try again"${CLEAR};;
 esac
 else
