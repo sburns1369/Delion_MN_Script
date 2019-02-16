@@ -142,8 +142,9 @@ echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
 deliond -datadir=/home/delion/.delion -daemon
 echo
 echo -e ${YELLOW}"Looking for a Shared Masternode Service? Check out Crypto Hash Tank" ${CLEAR}
-echo -e ${YELLOW}"Support my Project, and put your loose change to work for you!" ${CLEAR}
-echo -e ${YELLOW}" https://www.cryptohashtank.com/TJIF "${CLEAR}
+echo -e ${YELLOW}"Support ${BLUE}NullEntry${YELLOW} with a referal link, and" ${CLEAR}
+echo -e ${YELLOW}"  put your loose crypto change to work for you!" ${CLEAR}
+echo -e ${YELLOW}"    https://www.cryptohashtank.com/TJIF "${CLEAR}
 sleep 60
 echo -e "${GREEN}Configuring Second DeLion Node${CLEAR}"
 sudo mkdir /home/delion2/.delion
@@ -155,7 +156,7 @@ echo "server=1" >> /home/delion2/.delion/delion.conf
 echo "daemon=1" >> /home/delion2/.delion/delion.conf
 echo "maxconnections=250" >> /home/delion2/.delion/delion.conf
 echo "masternode=1" >> /home/delion2/.delion/delion.conf
-echo "rpcport=15959" >> /home/delion2/.delion/delion.conf
+echo "rpcport=15960" >> /home/delion2/.delion/delion.conf
 echo "listen=0" >> /home/delion2/.delion/delion.conf
 echo "externalip=[$(hostname -I | cut -f2 -d' ')]:15858" >> /home/delion2/.delion/delion.conf
 echo "masternodeprivkey=$privkey2" >> /home/delion2/.delion/delion.conf
