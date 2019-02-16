@@ -193,6 +193,6 @@ echo -e ${BLUE}" DeLion address: Dq92A8mAmqG5tjVKe7ADVD3ApSjbqGYxLD"${CLEAR}
 echo -e ${BLUE}" LTC address: MUdDdVr4Az1dVw47uC4srJ31Ksi5SNkC7H"${CLEAR}
 echo -e ${BLUE}" BTC address: 32FzghE1yUZRdDmCkj3bJ6vJyXxUVPKY93"${CLEAR}
 echo
-echo -e ${YELLOW}"Need help? Find Sburns1369\#1584 one Discord - https://discord.gg/YhJ8v3g"${CLEAR}
+echo -e ${YELLOW}"Need help? Find Sburns1369#1584 one Discord - https://discord.gg/YhJ8v3g"${CLEAR}
 echo
 echo -e ${RED}"The END."${CLEAR};
