@@ -27,7 +27,7 @@ COINFILES=Linux.zip
 DECOMPRESS=unzip
 #rocketstrap
 NEBootStrap=http://nullentry.com/chain/DLN/bootstrap.rar
-ADDNODE0=23.94.102.195
+ADDNODE0=66.42.113.222:15858
 ADDNODE1=45.77.226.43:15858
 ADDNODE2=96.44.134.217:15858
 ADDNODE3=173.249.33.218:15858
@@ -1059,7 +1059,7 @@ echo -e "         ."
   wget ${DOWNLOADCOINFILES}
   ${DECOMPRESS} ${COINFILES}
   sleep 3
-  sudo mv /root/${COIN3l}/twins-3.2.1/bin/${COINDAEMON} /root/${COIN3l}/twins-3.2.1/bin/${COINDAEMONCLI} /usr/local/bin
+  sudo mv /root/${COIN3l}/${COINDAEMON} /root/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
   sudo chmod 755 -R  /usr/local/bin/dev*
   #rm -rf /root/${COIN3l}
   }
@@ -1397,7 +1397,7 @@ echo -e "         ."
   fi
   #add check before downloading
   sudo apt-get install unrar
-  unrar x rocketstrap.rar /home/${COINl}1/.${COINl}
+  unrar x bootstrap.rar /home/${COINl}1/.${COINl}
   #test_pause
   rm -rf /root/${COIN3l}
   }
