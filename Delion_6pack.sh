@@ -318,7 +318,7 @@ echo "Downloading latest Delion binaries"
 wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
 unzip false
 sleep 3
-sudo mv /root/dln/delion /root/dln/delion-cli /usr/local/bin
+sudo mv /root/dln/deliond /root/dln/delion-cli /usr/local/bin
 sudo chmod 755 -R /usr/local/bin/delion*
 rm -rf /root/dln
 if [ ! -f /home/delion1/.delion/delion.conf ]; then
@@ -349,7 +349,7 @@ echo -e ${YELLOW}"Skipping Configuration there"${CLEAR}
 fi
 echo
 echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
-delion -datadir=/home/delion1/.delion -daemon
+deliond -datadir=/home/delion1/.delion -daemon
 echo
 echo -e ${YELLOW}"Looking for a Shared Masternode Service? Check out Crypto Hash Tank" ${CLEAR}
 echo -e ${YELLOW}"Support my Project, and put your loose change to work for you!" ${CLEAR}
@@ -566,22 +566,22 @@ cp -r /home/delion6/delion.conf /home/delion6/.delion/delion.conf
 sleep 1
 fi
 echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
-delion -datadir=/home/delion1/.delion -daemon
+deliond -datadir=/home/delion1/.delion -daemon
 sleep 20
 echo -e ${YELLOW}"Launching Second DLN Node"${CLEAR}
-delion -datadir=/home/delion2/.delion -daemon
+deliond -datadir=/home/delion2/.delion -daemon
 sleep 20
 echo -e ${YELLOW}"Launching Third DLN Node"${CLEAR}
-delion -datadir=/home/delion3/.delion -daemon
+deliond -datadir=/home/delion3/.delion -daemon
 sleep 20
 echo -e ${YELLOW}"Launching Fourth DLN Node"${CLEAR}
-delion -datadir=/home/delion4/.delion -daemon
+deliond -datadir=/home/delion4/.delion -daemon
 sleep 20
 echo -e ${YELLOW}"Launching Fifth DLN Node"${CLEAR}
-delion -datadir=/home/delion5/.delion -daemon
+deliond -datadir=/home/delion5/.delion -daemon
 sleep 20
 echo -e ${YELLOW}"Launching Sixth DLN Node"${CLEAR}
-delion -datadir=/home/delion6/.delion -daemon
+deliond -datadir=/home/delion6/.delion -daemon
 sleep 20
 echo -e ${BOLD}"All ${NODESN} DLN Nodes Launched".${CLEAR}
 echo

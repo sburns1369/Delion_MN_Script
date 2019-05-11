@@ -1,7 +1,7 @@
 #!/bin/bash
 #0.99-- NullEntryDev Script
-NODESL=Eight
-NODESN=8
+NODESL=Two
+NODESN=2
 BLUE='\033[0;96m'
 GREEN='\033[0;92m'
 RED='\033[0;91m'
@@ -248,9 +248,9 @@ fi
 cd /root/dln
 echo "Downloading latest Delion binaries"
 wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
-unzip false
+unzip Linux.zip
 sleep 3
-sudo mv /root/dln/delion /root/dln/delion-cli /usr/local/bin
+sudo mv /root/dln/deliond /root/dln/delion-cli /usr/local/bin
 sudo chmod 755 -R /usr/local/bin/delion*
 rm -rf /root/dln
 if [ ! -f /home/delion1/.delion/delion.conf ]; then
@@ -268,7 +268,13 @@ echo "rpcport=15960" >> /home/delion1/.delion/delion.conf
 echo "listen=0" >> /home/delion1/.delion/delion.conf
 echo "externalip=${MNIP1}:15858" >> /home/delion1/.delion/delion.conf
 echo "masternodeprivkey=$MNKEY" >> /home/delion1/.delion/delion.conf
-echo "addnode=23.94.102.195" >> /home/delion1/.delion/delion.conf
+echo "addnode=23.94.102.195:15858" >> /home/delion1/.delion/delion.conf
+echo "addnode=51.75.173.92:15858" >> /home/delion1/.delion/delion.conf
+echo "addnode=51.77.93.206:15858" >> /home/delion1/.delion/delion.conf
+echo "addnode=188.40.182.64:15858" >> /home/delion1/.delion/delion.conf
+echo "addnode=37.187.186.253:15858" >> /home/delion1/.delion/delion.conf
+echo "addnode=95.217.54.144:15858" >> /home/delion1/.delion/delion.conf
+echo "addnode=137.74.107.113:15858" >> /home/delion1/.delion/delion.conf
 MN1=0
 if [[ $NULLREC = "y" ]] ; then
 echo "masterNode1 : true" >> /usr/local/nullentrydev/dln.log
@@ -281,7 +287,7 @@ echo -e ${YELLOW}"Skipping Configuration there"${CLEAR}
 fi
 echo
 echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
-delion -datadir=/home/delion1/.delion -daemon
+deliond -datadir=/home/delion1/.delion -daemon
 echo
 echo -e ${YELLOW}"Looking for a Shared Masternode Service? Check out Crypto Hash Tank" ${CLEAR}
 echo -e ${YELLOW}"Support my Project, and put your loose change to work for you!" ${CLEAR}
@@ -306,7 +312,7 @@ echo "rpcport=15961" >> /home/delion2/delion.conf
 echo "listen=0" >> /home/delion2/delion.conf
 echo "externalip=[${MNIP2}]:15858" >> /home/delion2/delion.conf
 echo "masternodeprivkey=$MNKEY2" >> /home/delion2/delion.conf
-echo "addnode=[${MNIP1}]" >> /home/delion1/.delion/delion.conf
+echo "addnode=${MNIP1}" >> /home/delion1/.delion/delion.conf
 if [[ $NULLREC = "y" ]] ; then
 echo "masterNode2 : true" >> /usr/local/nullentrydev/dln.log
 echo "walletVersion2 : 1.0.0" >> /usr/local/nullentrydev/dln.log
@@ -344,10 +350,10 @@ cp -r /home/delion2/delion.conf /home/delion2/.delion/delion.conf
 sleep 1
 fi
 echo -e ${YELLOW}"Launching First DLN Node"${CLEAR}
-delion -datadir=/home/delion1/.delion -daemon
+deliond -datadir=/home/delion1/.delion -daemon
 sleep 20
 echo -e ${YELLOW}"Launching Second DLN Node"${CLEAR}
-delion -datadir=/home/delion2/.delion -daemon
+deliond -datadir=/home/delion2/.delion -daemon
 sleep 20
 echo -e ${BOLD}"All ${NODESN} DLN Nodes Launched".${CLEAR}
 echo
