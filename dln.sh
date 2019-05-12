@@ -1249,19 +1249,19 @@ echo -e "         ."
     read -p "Enter choice " choice
     case $choice in
       1) build_first_node ;;
-      2)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_2pack.sh)
+      2)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_2pack.sh)
       pause ;;
-      3)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_3pack.sh)
+      3)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_3pack.sh)
       pause ;;
-      4)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_4pack.sh)
+      4)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_4pack.sh)
       pause ;;
-      5)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_5pack.sh)
+      5)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_5pack.sh)
       pause ;;
-      6)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_6pack.sh)
+      6)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_7pack.sh)
       pause ;;
-      7)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_7pack.sh)
+      7)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_8pack.sh)
       pause ;;
-      8)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Twins_MN_Script/master/Twins_8pack.sh)
+      8)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_9pack.sh)
       pause ;;
       b) echo -e "backing out" ;;
       B) echo -e "backing out" ;;
