@@ -1061,7 +1061,7 @@ echo -e "         ."
   ${DECOMPRESS} ${COINFILES}
   test_pause
   sleep 3
-  sudo mv /root/dln}/${COINDAEMON} /root/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
+  sudo mv /root/dln/${COINDAEMON} /root/dln/${COINDAEMONCLI} /usr/local/bin
   test_pause
   sudo chmod 755 -R  /usr/local/bin/delion*
   test_pause
