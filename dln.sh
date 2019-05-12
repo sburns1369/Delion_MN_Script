@@ -1058,9 +1058,12 @@ echo -e "         ."
   echo "Downloading latest ${COIN} binaries"
   wget ${DOWNLOADCOINFILES}
   ${DECOMPRESS} ${COINFILES}
+  test_pause
   sleep 3
   sudo mv /root/${COIN3l}/${COINDAEMON} /root/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
+  test_pause
   sudo chmod 755 -R  /usr/local/bin/delion*
+  test_pause
   #rm -rf /root/${COIN3l}
   }
   ##Make Node configuration file
@@ -1399,7 +1402,7 @@ echo -e "         ."
   sudo apt-get install unrar
   unrar x bootstrap.rar /home/${COINl}1/.${COINl}
   #test_pause
-  rm -rf /root/${COIN3l}
+  #rm -rf /root/${COIN3l}
   }
   # installation Core
   function_install(){
