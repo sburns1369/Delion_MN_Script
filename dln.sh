@@ -17,6 +17,7 @@ COIN=Delion
 COINl=delion
 COIN3=DLN
 COIN3l=dln
+COINDAEMON=deliond
 COINDAEMONCLI=delion-cli
 COINCORE=.delion
 COINCONFIG=delion.conf
@@ -1050,17 +1051,17 @@ echo -e "         ."
   ###end test find masternode function
   download_coinfiles(){
   cd ~
-  if [ ! -d /root/${COIN3l} ]; then
-  sudo mkdir /root/${COIN3l}
+  if [ ! -d /root/dln ]; then
+  sudo mkdir /root/dln
   fi
-  cd /root/${COIN3l}
+  cd /root/dln
   #Download Wallet Files
   echo "Downloading latest ${COIN} binaries"
   wget ${DOWNLOADCOINFILES}
   ${DECOMPRESS} ${COINFILES}
   test_pause
   sleep 3
-  sudo mv /root/${COIN3l}/${COINDAEMON} /root/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
+  sudo mv /root/dln}/${COINDAEMON} /root/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
   test_pause
   sudo chmod 755 -R  /usr/local/bin/delion*
   test_pause
@@ -1402,7 +1403,7 @@ echo -e "         ."
   sudo apt-get install unrar
   unrar x bootstrap.rar /home/${COINl}1/.${COINl}
   #test_pause
-  #rm -rf /root/${COIN3l}
+  rm -rf /root/${COIN3l}
   }
   # installation Core
   function_install(){
