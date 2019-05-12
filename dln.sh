@@ -1258,11 +1258,11 @@ echo -e "         ."
       pause ;;
       5)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_5pack.sh)
       pause ;;
-      6)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_7pack.sh)
+      6)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_6pack.sh)
       pause ;;
-      7)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_8pack.sh)
+      7)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_7pack.sh)
       pause ;;
-      8)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_9pack.sh)
+      8)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_8pack.sh)
       pause ;;
       b) echo -e "backing out" ;;
       B) echo -e "backing out" ;;
