@@ -88,26 +88,26 @@ delion_Logo(){
   echo "                                                                      ";
   echo -e "      ${GREEN}                                                                ";
   echo "                                                                                                          ";
-  echo "DDDDDDDDDDD                      LLLLLLLL          iiii                                     ";
-  echo "D::::::::::DDD                   L::::::L         i::::i                                    ";
-  echo "D:::::::::::::D                  L::::::L          iiii                                     ";
-  echo "DDD::::DDDD::::D                 LL::::LL                                                    ";
-  echo "  D::::D   D::::D     eeeeeeeee   L:::L           iiiiii    oooooooooo  nnnn  nnnnnnn    ";
-  echo "  D::::D    D::::D  e::::::::::e  L:::L           i::::i  o:::::::::::o n:::nn:::::::nn  ";
-  echo "  D::::D    D::::D e::::eeee::::eeL:::L           i::::i o:::::::::::::on:::::::::::::nn ";
-  echo "  D::::D    D::::De::::e    e::::eL:::L           i::::i o:::::ooooo:::o n::::::::::::::n";
-  echo "  D::::D    D::::De:::::eeee:::::eL:::L           i::::i o::::o     o::o  n:::::nnn:::::n";
-  echo "  D::::D    D::::De:::::::::::::e L:::L           i::::i o::::o     o::o  n::::n   n::::n";
-  echo "  D::::D    D::::De::::eeeeeeeee  L:::L           i::::i o::::o     o::o  n::::n   n::::n";
-  echo "  D::::D   D::::D e:::::e         L:::L     LLLLL i::::i o::::o     o::o  n::::n   n::::n";
-  echo "DDD::::DDDD::::D  e::::::e       LL:::::LLLLL::::Li::::i o:::::ooooo:::o  n::::n   n::::n";
-  echo "D:::::::::::::D    e::::::eeeeee L:::::::::::::::Li::::i o:::::::::::::o  n::::n   n::::n";
-  echo "D::::::::::DDD       e::::::::::eL::::::::::::::L i::::i  o:::::::::::o   n::::n   n::::n";
-  echo "DDDDDDDDDDD           eeeeeeeeee LLLLLLLLLLLLLLLLL iiii    ooooooooooo    nnnnnn   nnnnnn";
+  echo "DDDDDDDDDDD                      LLLLLLL         iii                                     ";
+  echo "D::::::::::DDD                   L:::::L        i:::i                                    ";
+  echo "D:::::::::::::D                  L:::::L         iii                                     ";
+  echo "DDD::::DDDD::::D                 LL:::LL                                                   ";
+  echo "  D::::D   D::::D     eeeeeeeee   L::L          iiiii    oooooooooo  nnnn  nnnnnnn    ";
+  echo "  D::::D    D::::D  e::::::::::e  L::L          i:::i  o:::::::::::o n:::nn:::::::nn  ";
+  echo "  D::::D    D::::D e::::eeee::::eeL::L          i:::i o:::::::::::::on:::::::::::::nn ";
+  echo "  D::::D    D::::De::::e    e::::eL::L          i:::i o:::::ooooo:::o n::::::::::::::n";
+  echo "  D::::D    D::::De:::::eeee:::::eL::L          i:::i o::::o     o::o  n:::::nnn:::::n";
+  echo "  D::::D    D::::De:::::::::::::e L::L          i:::i o::::o     o::o  n::::n   n::::n";
+  echo "  D::::D    D::::De::::eeeeeeeee  L::L          i:::i o::::o     o::o  n::::n   n::::n";
+  echo "  D::::D   D::::D e:::::e         L::L    LLLLL i:::i o::::o     o::o  n::::n   n::::n";
+  echo "DDD::::DDDD::::D  e::::::e       LL::::LLLL::::Li:::i o:::::ooooo:::o  n::::n   n::::n";
+  echo "D:::::::::::::D    e::::::eeeeee L:::::::::::::Li:::i o:::::::::::::o  n::::n   n::::n";
+  echo "D::::::::::DDD       e::::::::::eL::::::::::::L i:::i  o:::::::::::o   n::::n   n::::n";
+  echo "DDDDDDDDDDD           eeeeeeeeee LLLLLLLLLLLLLLL iii    ooooooooooo    nnnnnn   nnnnnn";
 echo -e "${RED}                                                           ";
-  echo -e "               ╔╦╗┌─┐┌─┐┌┬┐┌─┐┬─┐┌┐┌┌─┐┌┬┐┌─┐  ╔╦╗┌─┐┌┐┌┌─┐┌─┐┌─┐┬─┐ ";
-  echo -e "               ║║║├─┤└─┐ │ ├┤ ├┬┘││││ │ ││├┤   ║║║├─┤│││├─┤│ ┬├┤ ├┬┘";
-  echo -e "               ╩ ╩┴ ┴└─┘ ┴ └─┘┴└─┘└┘└─┘─┴┘└─┘  ╩ ╩┴ ┴┘└┘┴ ┴└─┘└─┘┴└─";
+  echo -e "             ╔╦╗┌─┐┌─┐┌┬┐┌─┐┬─┐┌┐┌┌─┐┌┬┐┌─┐  ╔╦╗┌─┐┌┐┌┌─┐┌─┐┌─┐┬─┐ ";
+  echo -e "             ║║║├─┤└─┐ │ ├┤ ├┬┘││││ │ ││├┤   ║║║├─┤│││├─┤│ ┬├┤ ├┬┘";
+  echo -e "             ╩ ╩┴ ┴└─┘ ┴ └─┘┴└─┘└┘└─┘─┴┘└─┘  ╩ ╩┴ ┴┘└┘┴ ┴└─┘└─┘┴└─";
     echo -e "${CLEAR}"
   pause
   }
@@ -154,17 +154,17 @@ echo -e "      |=   =|"
 sleep 4
 echo -e "      |     |"
 sleep 4
-echo -e "      |${BLUE}  T  |"${CLEAR}
+echo -e "      |${BLUE}  D  |"${CLEAR}
 sleep 4
-echo -e "      |${BLUE}  W  |"${CLEAR}
+echo -e "      |${BLUE}  E  |"${CLEAR}
+sleep 4
+echo -e "      |${BLUE}  L  |"${CLEAR}
+sleep 4
+echo -e "      |${BLUE}  O  |"${CLEAR}
 sleep 4
 echo -e "      |${BLUE}  I  |"${CLEAR}
 sleep 4
 echo -e "      |${BLUE}  N  |"${CLEAR}
-sleep 4
-echo -e "      |${BLUE}  S  |"${CLEAR}
-sleep 4
-echo -e "      |     |"
 sleep 4
 echo -e "      |     |"
 sleep 4
@@ -194,9 +194,9 @@ echo -e "       (( ))        ${GREEN} |               Relax                     
 sleep 4
 echo -e "        ( )"
 sleep 4
-echo -e "         .W^"
+echo -e "         .D^"
 sleep 4
-echo -e "         .I^"
+echo -e "         .L^"
 sleep 4
 echo -e "         .N^"
 sleep 4
