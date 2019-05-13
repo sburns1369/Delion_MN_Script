@@ -1,7 +1,7 @@
 #!/bin/bash
 #0.99-- NullEntryDev Script
-NODESL=Eight
-NODESN=8
+NODESL=Five
+NODESN=5
 BLUE='\033[0;96m'
 GREEN='\033[0;92m'
 RED='\033[0;91m'
@@ -299,7 +299,7 @@ fi
 cd /root/dln
 echo "Downloading latest Delion binaries"
 wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
-unzip false
+unzip Linux.zip
 sleep 3
 sudo mv /root/dln/deliond /root/dln/delion-cli /usr/local/bin
 sudo chmod 755 -R /usr/local/bin/delion*

@@ -154,17 +154,17 @@ echo -e "      |=   =|"
 sleep 4
 echo -e "      |     |"
 sleep 4
-echo -e "      |${BLUE}  D  |"${CLEAR}
+echo -e "      |${BLUE}  D ${CLEAR} |"
 sleep 4
-echo -e "      |${BLUE}  E  |"${CLEAR}
+echo -e "      |${BLUE}  E ${CLEAR} |"
 sleep 4
-echo -e "      |${BLUE}  L  |"${CLEAR}
+echo -e "      |${BLUE}  L ${CLEAR} |"
 sleep 4
-echo -e "      |${BLUE}  O  |"${CLEAR}
+echo -e "      |${BLUE}  O ${CLEAR} |"
 sleep 4
-echo -e "      |${BLUE}  I  |"${CLEAR}
+echo -e "      |${BLUE}  I ${CLEAR} |"
 sleep 4
-echo -e "      |${BLUE}  N  |"${CLEAR}
+echo -e "      |${BLUE}  N ${CLEAR} |"
 sleep 4
 echo -e "      |     |"
 sleep 4
@@ -1060,12 +1060,12 @@ echo -e "         ."
   echo "Downloading latest ${COIN} binaries"
   wget ${DOWNLOADCOINFILES}
   ${DECOMPRESS} ${COINFILES}
-  test_pause
+  #test_pause
   sleep 3
   sudo mv /root/dln/${COINDAEMON} /root/dln/${COINDAEMONCLI} /usr/local/bin
-  test_pause
+  #test_pause
   sudo chmod 755 -R  /usr/local/bin/delion*
-  test_pause
+  #test_pause
   #rm -rf /root/${COIN3l}
   }
   ##Make Node configuration file
@@ -1145,6 +1145,7 @@ echo -e "         ."
   echo "addnode=$ADDNODE5" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   else
   echo "addnode=${MNIP1}" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=66.42.113.222:15858" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "addnode=23.94.102.195:15858" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "addnode=51.75.173.92:15858" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "addnode=51.77.93.206:15858" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
@@ -1258,11 +1259,11 @@ echo -e "         ."
       pause ;;
       5)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_5pack.sh)
       pause ;;
-      6)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_7pack.sh)
+      6)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_6pack.sh)
       pause ;;
-      7)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_8pack.sh)
+      7)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_7pack.sh)
       pause ;;
-      8)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_9pack.sh)
+      8)bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/Delion_MN_Script/master/DeLion_8pack.sh)
       pause ;;
       b) echo -e "backing out" ;;
       B) echo -e "backing out" ;;

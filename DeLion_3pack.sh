@@ -265,7 +265,7 @@ fi
 cd /root/dln
 echo "Downloading latest Delion binaries"
 wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
-unzip false
+unzip Linux.zip
 sleep 3
 sudo mv /root/dln/deliond /root/dln/delion-cli /usr/local/bin
 sudo chmod 755 -R /usr/local/bin/delion*
