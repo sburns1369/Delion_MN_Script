@@ -222,10 +222,10 @@ echo -e "         ."
   echo
   echo -e ${BLUE}"May this script will store a small amount data in /usr/local/nullentrydev/ ?"${CLEAR}
   echo -e ${BLUE}"This information is for version updates, masternode installation, file repair"${CLEAR}
-  echo -e ${BLUE}"and later implimentation. Zero information is transmitted off the VPS or collected"${CLEAR}
+  echo -e ${BLUE}"and later implementation. Zero information is transmitted off the VPS or collected"${CLEAR}
   echo -e ${BLUE}"for any advertising or information harvesting."${CLEAR}
   echo
-  echo -e ${BLUE}"Upon agrement it will start to automatically install the Libraries and code"${CLEAR}
+  echo -e ${BLUE}"Upon agreement it will start to automatically install the Libraries and code"${CLEAR}
   echo -e ${BLUE}"needed for most masternodes and this script. As well as Update and Upgrade"${CLEAR}
   echo -e ${BLUE}"existing software on your VPS. Additional dependencies May be installed later"${CLEAR}
   echo
@@ -296,6 +296,7 @@ echo -e "         ."
   #edit Masternode Configuration
   edit_masternode(){
   echo -e ${GREEN}"Editing Masternode ${nodeunit} Configuration" ${CLEAR}
+  echo
   echo -e ${YELLOW}"Use [Control Key] + [X Key] to exit editting" ${CLEAR}
   echo -e ${YELLOW}"Press [N Key] to Abort Changes in editor" ${CLEAR}
   echo -e ${YELLOW}"Or press [Y Key] to Save Changes" ${CLEAR}
@@ -521,9 +522,9 @@ echo -e "         ."
     function_reindex_masternode ;;
     10) nodeunit=0
     function_reindex_masternode ;;
-    a) echo -e "Launching all Masters!"
+    a) echo -e "Launching all Masternodes!"
     start_All_Nodes ;;
-    A) echo -e "Launching all Masters!"
+    A) echo -e "Launching all Mastersnodes!"
     start_All_Nodes ;;
     b) echo -e "backing out" ;;
     B) echo -e "backing out" ;;
@@ -566,7 +567,7 @@ echo -e "         ."
   echo "   Edit Masternode Configuration"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   if [ -d /home/${COINl} ]; then
-  echo -e "L - Legacy Masternode One Status"
+  echo -e "L - Legacy Masternode Status"
   fi
   if [ -d /home/${COINl}1 ]; then
   echo -e "01 - Masternode One"
@@ -609,7 +610,7 @@ echo -e "         ."
   echo "   stop Masternode(s)"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~"
   if [ -d /home/${COINl} ]; then
-  echo -e "L - Legacy Masternode One Status"
+  echo -e "L - Legacy Masternode Status"
   fi
   if [ -d /home/${COINl}1 ]; then
   echo -e "01 - Masternode One"
@@ -1173,9 +1174,9 @@ echo -e "         ."
   wait_first_node_launch(){
   echo
   echo -e "${RED}This process can take a while!${CLEAR}"
-  echo -e "${YELLOW}Waiting on First Masternode Block Chain to Synchronize${CLEAR}"
+  echo -e "${YELLOW}Waiting on First Masternode Block Chain to Synchronize.${CLEAR}"
   echo -e "${YELLOW}Once complete, it will stop and copy the block chain to${CLEAR}"
-  echo -e "${YELLOW}the other masternodes.  This prevent all masternodes${CLEAR}"
+  echo -e "${YELLOW}the other masternodes.  This will prevent all masternodes${CLEAR}"
   echo -e "${YELLOW}from downloading the block chain individually; taking up${CLEAR}"
   echo -e "${YELLOW}more time and resources.  Current Block count will be displayed below.${CLEAR}"
   ${COINDAEMONCLI} -datadir=/home/${COINl}${nodeunit}/${COINCORE} getblockcount
